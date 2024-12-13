@@ -7,3 +7,8 @@ console.log('Response ',response)
 }).catch((error)=>{
 console.log('Error ',error)    
 })
+const fs=require('fs/promises')
+async function writeFile(){
+   await fs.writeFile('myfile.txt','hello guys')
+}
+writeFile()
